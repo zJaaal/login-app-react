@@ -11,7 +11,7 @@ import AboutPage from "./src/pages/AboutPage";
 import HomePage from "./src/pages/HomePage";
 import LoginPage from "./src/pages/LoginPage";
 
-import NavBar from "./components/NavBar";
+import NavBar from "./src/components/NavBar";
 
 const AppRouter = () => {
   return (
