@@ -5,17 +5,19 @@ const NavBar = () => {
   return (
     <Navbar bg="dark" expand="lg" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <LinkContainer to="/">
+          <Navbar.Brand>Login App</Navbar.Brand>
+        </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <LinkContainer to="/">
+            <LinkContainer to="/" activeClassName="">
               <Nav.Link>Home</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/about">
+            <LinkContainer to="/about" activeClassName="">
               <Nav.Link>About</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/login">
+            <LinkContainer to="/login" activeClassName="">
               <Nav.Link>Login</Nav.Link>
             </LinkContainer>
           </Nav>
